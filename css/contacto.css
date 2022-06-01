@@ -1,0 +1,60 @@
+/* inicio contacto */
+
+.contacto{
+    display: flex;
+    gap: 50px;
+}
+.contacto div{
+    width: 100%;
+    /* background-color: yellow; */
+}
+
+.datos p{
+    font-size: 14px;
+}
+.datos ul li{
+    font-size: 13px;
+}
+.formulario p label{ 
+    min-width: 80px;
+    display: flex;
+    align-items: center;
+    }
+    /* si yo lo quiero al mismo nivel y con la letra al medio le pongo el display flex el p y luego le pongo en la p label un display flax y un align item center */
+.formulario p:nth-child(4){
+    align-items: flex-start;
+} /* esto es para que la palabrita de mensaje quede arriba y no centrada */
+/* otra solucion es ponerle una clase a la p de mensaje y modificarlo asi en lugar de una pseudoclase. Esto por ahi esta bueno si quiero incorporar mas elementos al formulario */
+.formulario p{
+    display: flex;
+    }
+ /* si se lo saco la palabrita va arriba de la cajita */
+.formulario input, 
+.formulario textarea{
+    width: 100%;
+    border-radius: 5px;
+    background-color: #ddd;
+    border: 1px #999;
+    font-size: 14px;
+    padding: 6px 10px;
+    box-sizing: border-box;
+}
+.formulario textarea{
+    height: 150px;
+    resize: none;
+}
+.formulario input[type="submit"]{
+    background-color: #6da9ed;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+color: white;
+font-size: 16px;
+padding: 6px 20px;
+width: auto;
+position: relative;
+left: 90px;/* estos dos ultimos elementos lo que hacen es mover el enviar a la izquierda, porque estaba al nivel de las palabras */
+cursor: pointer; /* esto para que aparezca la manito del cursor */
+}
+.formulario input[type="submit"]:hover{
+    background-color: #2e64a1;
+}/* esto es para que cambie de color cuando me posiciono sobr el elemento */
+/* fin contacto */

@@ -1,0 +1,36 @@
+/* inicio de servicios */
+.servicio {
+    border:1px solid #ccc;
+    border-radius: 10px;
+    padding: 13px;
+    margin: 10px 0;
+    display: flex;
+    gap: 32px;
+    align-items: center;
+    
+/* box sizing por ahi sirve mas cuando esta una caja junto a otra. aca al estar una por debajo de la otra no hay  mucha hostoria */
+
+}
+.servicio .info h4 {
+    font-weight: normal;
+    color: #2e64a1;
+font-style: italic;
+border-bottom:1px solid #2e64a1;
+padding-bottom: 7px;
+margin: 10px 0;
+}
+.servicio .info p{
+    font-size: 12px;
+    line-height: 16px;
+    padding: 5px;
+}
+.servicio img{
+    border-radius: 13px;
+    display: block;
+    max-width: 225px;
+}
+.servicio:nth-child(even){
+    /* display: inline-flex; */ /* no hace mucha diferencia y nadie lo puso */
+    flex-direction: row-reverse;
+}
+/* fin servicios */

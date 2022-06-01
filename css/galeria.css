@@ -1,0 +1,29 @@
+/* inicio galeria */
+
+.galeria {
+    /* display:block; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    
+}
+.galeria img {
+    padding: 5px;
+    border: 1px solid #ccc;
+    width: 18%;
+    /* align-items: flex-start; */
+    /* margin: 3px 8px; */
+    margin-right: 2%;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    }
+    /* el espacio que queda al final de la quinta imagen se resuelve con grid: fijate que es y como usarlo */
+/* .galeria img:nth-child(5n+1){
+    border-color: red;
+    
+}
+.galeria img:nth-child(3){
+    background-color: aqua;
+}*/
+/* fijate que no te queda perfectamente alineado a contacto, preguntar en clase */
+/* fin de la galeria */
